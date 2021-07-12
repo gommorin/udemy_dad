@@ -43,8 +43,8 @@ body {
   max-width: 90%;
 }
 
-.btn {
-  background-color: darkslategray;
+.btnThen {
+  background: linear-gradient(60deg, darkslategrey, rgb(13, 172, 201));
   color: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   border: none;
@@ -53,12 +53,29 @@ body {
   font-size: 18px;
   font-family: inherit;
   cursor: pointer;
+  margin: 0 15px;
 }
 
-.btn:focus {
+.btnAsync {
+  background: linear-gradient(60deg, darkgreen, lightgreen);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.btnThen:focus,
+.btnAsync:focus {
   outline: 0;
 }
 
-.btn:active {
+.btnThen:active,
+.btnAsync:active {
   transform: scale(.97);
 }
+

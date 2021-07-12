@@ -1,13 +1,15 @@
 const jokeEl = document.getElementById('joke')
-const jokeBtn = document.getElementById('jokeBtn')
+const jokeBtnThen = document.getElementById('jokeBtnThen')
+const jokeBtnAsync = document.getElementById('jokeBtnAsync')
 
-jokeBtn.addEventListener('click', generateJoke2)
+jokeBtnThen.addEventListener('click', generateJoke1)
+jokeBtnAsync.addEventListener('click', generateJoke2)
 
-// generateJoke1() // FUNCION CON SINTAXIS .THEN
+generateJoke1() // FUNCION CON SINTAXIS .THEN
 generateJoke2() // FUNCION CON SINTAXIS ASYNC
 
 
-// OPCION 1 PARA ESCRIBIR FUNCION
+// OPCION 1 PARA ESCRIBIR FUNCION USANDO .THEN
 function generateJoke1() {
   fetch('https://icanhazdadjoke.com/', {
       headers: {
